@@ -1,51 +1,34 @@
-import Carousel from 'react-bootstrap/Carousel';
+
+import Card from 'react-bootstrap/Card';
+
 import c1 from './c1.jpeg'
 function Carousels () {
   return (
-    <Carousel>
-      <Carousel.Item>
-        <img
-        style={{ height: "300px" }}
-          className="d-block w-100"
-          src={c1}
-          alt="First slide"
-        />
-        <Carousel.Caption>
-          <h3>Study</h3>
-          <p>한 학기 동안 학습한 클라우드 컴퓨팅에 대한 전반적인 내용</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          style={{ height: "300px" }}
-
-          className="d-block w-100"
-          src={c1}          
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Technology</h3>
-          <p>클라우드 컴퓨팅에 필요한 핵심 기술들</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img        
-        style={{ height: "300px" }}
-
-          className="d-block w-100"
-          src={c1}          
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Trend</h3>
-          <p>
-            클라우드 컴퓨팅의 최신 동향들
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
+    <>
+    <Card className="bg-dark text-white" style={{}}>
+    <Card.Img src="holder.js/100px270" alt="Card image" />
+    <Card.ImgOverlay>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+        This is a wider card with supporting text below as a natural lead-in
+        to additional content. This content is a little bit longer.
+      </Card.Text>
+      <Card.Text>Last updated 3 mins ago</Card.Text>
+    </Card.ImgOverlay>
+  </Card>
+  <Card className="bg-dark text-white">
+  <Card.Img src="holder.js/100px270" alt="Card image" />
+  <Card.ImgOverlay>
+    <Card.Title>Card title</Card.Title>
+    <Card.Text>
+      This is a wider card with supporting text below as a natural lead-in
+      to additional content. This content is a little bit longer.
+    </Card.Text>
+    <Card.Text>Last updated 3 mins ago</Card.Text>
+  </Card.ImgOverlay>
+</Card>
+</>
+    
   );
 }
 
